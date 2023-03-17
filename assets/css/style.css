@@ -832,6 +832,9 @@ progress {
   margin-right: calc(-.5 * var(--mrittik-gutter-x));
   margin-left: calc(-.5 * var(--mrittik-gutter-x));
 }
+.new{
+  width: 30%
+}
 
 .row-services{
   --mrittik-gutter-x: 1.5rem;
@@ -13230,6 +13233,10 @@ label {
   }
 }
 
+#funfacts{
+  background:url(/assets/img/about\ \ \(1920\ ×\ 726\ px\).png)
+}
+
 .funfacts_inner {
   display: flex;
   justify-content: space-around;
@@ -14791,6 +14798,10 @@ label {
 
 .swiper_testimonial .swiper-slide.swiper-slide-active .testimonial-block p {
   color: #ffffff;
+}
+
+.page_header_inner{
+  background: url(/assets/img/slide\ 3\ \(470\ ×\ 712\ px\)\ \(1920\ ×\ 1080\ px\).png) !important;
 }
 
 .page_header.in-service .page_header_inner {
