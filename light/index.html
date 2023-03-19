@@ -81,6 +81,7 @@
 
 
                 <div class="mainnav d-none d-lg-block">
+                    
                     <ul class="main_menu">
                         <li class="menu-item"><a href="index.html">Home</a>
                         </li>
@@ -93,10 +94,10 @@
                         </li>
                         <li class="menu-item"><a href="blog-details.html">Blog</a></li>
                         <li class="menu-item"><a href="contact.html">Contacts</a></li>
-                        <div id = "google_element">
 
-                        </div>
-                        
+                        <!-- <li id='google_translate_element'></li> -->
+
+
                     </ul>
                 </div>
                 <div class="header_right_part d-flex align-items-center">
@@ -123,10 +124,11 @@
     </header>
 
     <div class="aside_info_wrapper">
+        <div id='google_translate_element'></div>
         <button class="aside_close"><i class="bi bi-x-lg"></i></button>
         <div class="aside_logo">
             <a href="index.html" class="light_logo"><img src="../assets/img/LOGO MR.png" alt="logo"></a>
-                    <a href="index.html" class="dark_logo"><img src="../assets/img/LOGO MR.png" alt="logo"></a>
+            <a href="index.html" class="dark_logo"><img src="../assets/img/LOGO MR.png" alt="logo"></a>
         </div>
         <div class="aside_info_inner">
             <p>HRO MARBNITE</p>
@@ -134,11 +136,12 @@
             <div class="aside_info_inner_box">
                 <h5>Contact Info</h5>
                 <p>+84 964170063</p>
-                
+
                 <p>hromarbnite@gmail.com</p>
 
                 <h5>Office Address</h5>
-                <p>Floor 1A, Building N03-T8, <br> Diplomatic Corps, Xuan Tao Ward, <br> Bac Tu Liem District, Hanoi, Vietnam.</p>
+                <p>Floor 1A, Building N03-T8, <br> Diplomatic Corps, Xuan Tao Ward, <br> Bac Tu Liem District, Hanoi,
+                    Vietnam.</p>
             </div>
             <div class="social_sites">
                 <ul class="d-flex align-items-center justify-content-center">
@@ -153,12 +156,14 @@
 
 
     <!-- Main Wrapper-->
+    
     <main class="wrapper">
         <div class="theme_slider bg-black">
             <div class="container">
                 <div class="swiper swiper_theme_slider">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
+                        
                             <div class="slider"
                                 style="background-image: url('../assets/img/Untitled\ \(1920\ ×\ 1080\ px\).png')">
                                 <div class="slide_content">
@@ -1040,7 +1045,7 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="home_contact">
-                                <form action="https://formsubmit.co/aryan14vema@gmail.com" method="POST">
+                                <form action="https://formsubmit.co/hromarbnite@gmail.com" method="POST">
                                     <input class="form-control form-control-lg" name="name" id="name" type="text"
                                         placeholder="Your Name*" required aria-label=".form-control-lg example">
                                     <input class="form-control form-control-lg" name="phone" id="phone" type="number"
@@ -1131,6 +1136,7 @@
                             </div>
                         </div>
                     </div>
+                    
                     <div class="col-lg-4 col-md-5 col-sm-5">
                         <div class="footer_elements d-flex align-items-center justify-content-end">
                             <div class="footer_elements_inner">
@@ -1161,6 +1167,7 @@
                     </div>
                 </div>
             </div>
+            
 
 
             <!-- Section Grid Lines -->
@@ -1225,14 +1232,18 @@
 
     <!-- Theme Custom JS -->
     <script src="../assets/js/theme.js"></script>
-    <script type = "text/javascript">
-        src = "http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" >
+    <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+        </script>
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                { pageLanguage: 'en' },
+                'google_translate_element'
+            );
+        }
     </script>
-    <script type = "text/javascript">
-            function googleTranslateElementInit() {
-                new google.translate.TranslateElement("google_element");
-            }
-    </script>
+
 </body>
 
 </html>

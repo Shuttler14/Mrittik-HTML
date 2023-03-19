@@ -14792,6 +14792,22 @@ label {
   top: 8px;
 }
 
+iframe{
+  visibility: hidden;
+}
+
+.skiptranslate iframe{
+  visibility: hidden !important;
+}
+
+#google_translate_element iframe{
+  visibility: hidden !important;
+}
+
+.goog-te-banner-frame .skiptranslate iframe {
+  display: none !important;
+}
+
 .swiper_testimonial {
   padding-bottom: 50px;
 }
